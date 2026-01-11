@@ -8,12 +8,12 @@ namespace NodeCanvas.Tasks.Actions {
 	public class AT_ChangeSize : ActionTask {
 
 		public Transform captransform;
+		public int stander = 0;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
 		protected override string OnInit() {
 
-			captransform = agent.transform;
 
 			return null;
 		}
@@ -23,19 +23,30 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
-			captransform.localScale = new Vector3 (5,5,5);
+			if(stander < 2)
+			{
+				stander = 5;
+			}
+			else
+			{
+				stander = 1;
+			}
+				
 
-			EndAction(true);
+			Debug.Log(stander);
+
+            EndAction(true);
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
-			
-		}
+
+            
+        }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-            captransform.localScale = new Vector3(1, 1, 1);
+            captransform.localScale = new Vector3(stander, stander, stander);
         }
 
 		//Called when the task is paused.

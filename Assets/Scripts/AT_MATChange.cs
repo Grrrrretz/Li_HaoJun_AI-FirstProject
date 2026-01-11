@@ -7,14 +7,18 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class AT_MATChange : ActionTask {
 
-		MeshRenderer MAR;
+		public MeshRenderer MAR;
 		Material[] mats;
+
+        public Material matA;
+        public Material matB;
+
+        bool changed = false;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
 
-			MAR = agent.GetComponent<MeshRenderer>();
 
              mats = MAR.materials;
 
@@ -27,7 +31,22 @@ namespace NodeCanvas.Tasks.Actions {
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
 
-			mats[0] = mats[1];
+			Material now;
+
+
+            changed = !changed;
+
+			if (changed) 
+			{
+				now = matA;
+			}
+			else
+			{
+				now = matB;
+			}
+
+            mats[0] = now;
+            MAR.materials = mats;
 
             EndAction(true);
 		}
@@ -39,7 +58,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-            mats[0] = mats[0];
+
         }
 
 		//Called when the task is paused.
