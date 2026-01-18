@@ -29,7 +29,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 
-            bool less = currentValue.value <= value;
+            bool less = currentValue.value < value;
             return less;
             
 		}

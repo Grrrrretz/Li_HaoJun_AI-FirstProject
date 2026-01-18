@@ -28,7 +28,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Called once per frame while the condition is active.
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
-            bool move = currentValue.value >= value;
+            bool move = currentValue.value > value;
             return move;
         }
 	}
