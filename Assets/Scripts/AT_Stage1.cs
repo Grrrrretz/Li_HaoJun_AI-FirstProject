@@ -11,7 +11,7 @@ namespace NodeCanvas.Tasks.Actions
 
 		public Transform playerrota;
 
-        public BBParameter<float> stabilit;
+        public BBParameter<float> stability;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -23,17 +23,18 @@ namespace NodeCanvas.Tasks.Actions
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-			EndAction(true);
+			
 		}
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-			Vector3 random = new Vector3(Random.RandomRange(0, 180), Random.RandomRange(0, 180), Random.RandomRange(0, 180));
+			Vector3 random = new Vector3(Random.RandomRange(0, 10), Random.RandomRange(0, 10), Random.RandomRange(0, 10));
 			playerrota.rotation = Quaternion.Euler(random);
 
+		
 
-
+           // 
 
         }
 

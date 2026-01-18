@@ -5,10 +5,9 @@ using UnityEngine;
 
 namespace NodeCanvas.Tasks.Actions {
 
-	public class AT_loosestability : ActionTask {
+	public class AT_Goback : ActionTask {
 
-        public float rateOfLoose;
-        public BBParameter<float> currentValue;
+        public Transform light;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -26,7 +25,9 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-            currentValue.value -= rateOfLoose * Time.deltaTime;
+            Vector3 directionToMove = light.position - agent.transform.position;
+
+            agent.transform.position += directionToMove.normalized * 1 * Time.deltaTime;
 
         }
 

@@ -1,14 +1,16 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
+using System;
 using UnityEngine;
 
 
 namespace NodeCanvas.Tasks.Actions {
 
-	public class AT_loosestability : ActionTask {
+	public class AT_Stage2 : ActionTask {
 
-        public float rateOfLoose;
-        public BBParameter<float> currentValue;
+        public Transform playerrota;
+
+        public BBParameter<float> stability;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -26,14 +28,26 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-            currentValue.value -= rateOfLoose * Time.deltaTime;
+            Vector3 random = new Vector3(UnityEngine.Random.RandomRange(0, 50), UnityEngine.Random.RandomRange(0, 50), UnityEngine.Random.RandomRange(0, 50));
+            playerrota.rotation = Quaternion.Euler(random);
+
+            if (stability.value <= 0)
+            {
+                playerrota.rotation = Quaternion.Euler(Vector3.zero);
+                EndAction(true);
+            }
+
+          
+
 
         }
 
-		//Called when the task is disabled.
-		protected override void OnStop() {
-			
-		}
+        //Called when the task is disabled.
+        protected override void OnStop() {
+
+            
+
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {
