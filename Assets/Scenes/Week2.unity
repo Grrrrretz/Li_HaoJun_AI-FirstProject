@@ -250,11 +250,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"Stability":{"_value":5.0,"_name":"Stability","_id":"dd9ab67e-861b-49de-bff6-40599f00a0db","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"Stability":{"_value":20.0,"_name":"Stability","_id":"dd9ab67e-861b-49de-bff6-40599f00a0db","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
-  - _json: '{"_value":5.0,"_name":"Stability","_id":"dd9ab67e-861b-49de-bff6-40599f00a0db","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":20.0,"_name":"Stability","_id":"dd9ab67e-861b-49de-bff6-40599f00a0db","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &1241053286
@@ -270,17 +270,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"},{"playerrota":1,"stability":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_Stage2"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stage2","_position":{"x":810.6667,"y":585.3333},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"goTo":2,"$type":"NodeCanvas.Tasks.Actions.AT_Goback"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Goback","_position":{"x":546.0,"y":651.6667},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"},{"goTo":3,"$type":"NodeCanvas.Tasks.Actions.AT_Goback"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stable","_position":{"x":314.0,"y":307.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"playerrota":1,"stability":{},"$type":"NodeCanvas.Tasks.Actions.AT_Stage1"},{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stage1","_position":{"x":609.6666,"y":417.3333},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":20.0,"$type":"NodeCanvas.Tasks.Conditions.CT_more"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":15.0,"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":10.0,"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"},{"goTo":1,"$type":"NodeCanvas.Tasks.Actions.AT_Goback"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stable","_position":{"x":314.0,"y":307.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"playerrota":2,"stability":{},"$type":"NodeCanvas.Tasks.Actions.AT_Stage1"},{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stage1","_position":{"x":609.6666,"y":417.3333},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"rateOfLoose":1.0,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"},{"playerrota":2,"stability":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_Stage2"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stage2","_position":{"x":810.6667,"y":585.3333},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"goTo":3,"$type":"NodeCanvas.Tasks.Actions.AT_Goback"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Goback","_position":{"x":546.0,"y":651.6667},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"}],"connections":[{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":15.0,"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":10.0,"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Conditions.CT_UnderStable"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"value":20.0,"$type":"NodeCanvas.Tasks.Conditions.CT_more"},"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
+  - {fileID: 1304339233}
   - {fileID: 1241053290}
   - {fileID: 1619732553}
-  - {fileID: 1304339233}
   _boundGraphSource:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 22, y: -289}
+    _translation: {x: 30, y: -243}
     _zoomFactor: 1
   _firstActivation: 0
   _enableAction: 0
@@ -375,7 +375,7 @@ Transform:
   m_GameObject: {fileID: 1241053284}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9075918, y: 2.7318861, z: 13.67}
+  m_LocalPosition: {x: 1.9075918, y: 2.7318861, z: 3.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -406,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 1304339232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.82, y: 0.9834354, z: 15.09}
+  m_LocalPosition: {x: 1.82, y: 2.59, z: 15.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
