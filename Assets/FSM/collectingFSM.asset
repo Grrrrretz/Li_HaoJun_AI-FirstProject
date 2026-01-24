@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: collectingFSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"goTo":{"_name":"OBJ1","_targetVariableID":"0d09a88f-3fc2-467c-a9e4-914abed6f108"},"$type":"NodeCanvas.Tasks.Actions.AT_subGoTo"},{"rateOfLoose":0.4,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":490.0,"y":146.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"goTo":{"_name":"OBJ2","_targetVariableID":"1c78320a-e5ae-4ea1-a789-235d42681b10"},"$type":"NodeCanvas.Tasks.Actions.AT_subGoTo"},{"rateOfLoose":0.4,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":735.0,"y":196.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"goTo":{"_name":"OBJ3","_targetVariableID":"204275ad-f3dd-46ef-af31-2629571bd1c5"},"$type":"NodeCanvas.Tasks.Actions.AT_subGoTo"},{"rateOfLoose":0.4,"currentValue":{"_name":"Stability","_targetVariableID":"dd9ab67e-861b-49de-bff6-40599f00a0db"},"$type":"NodeCanvas.Tasks.Actions.AT_loosestability"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":864.0,"y":353.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_condition":{"maxtime":2.0,"$type":"NodeCanvas.Tasks.Conditions.CT_Timmer"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"maxtime":2.0,"$type":"NodeCanvas.Tasks.Conditions.CT_Timmer"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"maxtime":2.0,"$type":"NodeCanvas.Tasks.Conditions.CT_Timmer"},"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences: []
   _graphSource:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
+    _translation: {x: -150, y: 20}
     _zoomFactor: 1
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}
