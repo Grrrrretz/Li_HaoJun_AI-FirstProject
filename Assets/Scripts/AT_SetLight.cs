@@ -15,7 +15,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> nowIntensity;
 		public float offIntensity;
 		public float onIntensity;
-		float t;
+		public float t;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -35,14 +35,14 @@ namespace NodeCanvas.Tasks.Actions {
 
 			if(Switch == true)
 			{
-				Lightchange(pointlight, nowIntensity, onIntensity, t);
+				Lightchange(pointlight, nowIntensity, onIntensity);
 
 				nowIntensity = onIntensity;
 
 			}
 			else
 			{
-                Lightchange(pointlight, nowIntensity, offIntensity, t);
+                Lightchange(pointlight, nowIntensity, offIntensity);
 				nowIntensity = offIntensity;
             }
 
@@ -59,10 +59,10 @@ namespace NodeCanvas.Tasks.Actions {
 			
 		}
 
-		void Lightchange(BBParameter<Light> pointlight, BBParameter<float> nowIntensity, float Intensity, float t) 
+		void Lightchange(BBParameter<Light> pointlight, BBParameter<float> nowIntensity, float Intensity) 
 		{
             t += Time.deltaTime;
-            pointlight.value.intensity = Mathf.Lerp(nowIntensity.value, Intensity, t);
+            pointlight.value.intensity = Mathf.Lerp(nowIntensity.value, Intensity, t/1);
 
 
         }
