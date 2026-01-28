@@ -27,7 +27,7 @@ namespace NodeCanvas.Tasks.Actions
             LeadScout2 = Random.insideUnitSphere * 3;
             LeadScout3 = Random.insideUnitSphere * 3;
 
-            NavMeshAgent.remainingDistance
+			
 
         }
 
@@ -35,17 +35,7 @@ namespace NodeCanvas.Tasks.Actions
 		{
 			//When they have arrived then end the task
 
-			if ()
-			{
-
-			}else if ()
-			{
-
-			}
-			else
-			{
-
-			}
+		
 
 
 
