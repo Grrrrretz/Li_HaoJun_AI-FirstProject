@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
+  m_Name: WolfFSM
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"wandering","_position":{"x":359.0,"y":245.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Howl","_position":{"x":570.3292,"y":383.7206},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_nestedFSM":{"_value":1},"_name":"Play","_position":{"x":911.8788,"y":485.602},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"2"},{"_actionList":{"executionMode":1,"actions":[{"rateOfadd":2.0,"currentValue":{"_name":"hungry","_targetVariableID":"f34a4158-72a3-452d-8dcf-488d91dff5a9"},"$type":"NodeCanvas.Tasks.Actions.AT_addValue"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Eat","_position":{"x":735.03,"y":163.1153},"$type":"NodeCanvas.StateMachines.ActionState","$id":"3"},{"_actionList":{"executionMode":1,"actions":[{"rateOfadd":2.0,"currentValue":{"_name":"Thirst","_targetVariableID":"30083265-f955-46db-b6e6-7da7bde842a3"},"$type":"NodeCanvas.Tasks.Actions.AT_addValue"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Drink","_position":{"x":642.3907,"y":65.71973},"$type":"NodeCanvas.StateMachines.ActionState","$id":"4"},{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"GoToOtherWolf","_position":{"x":752.5066,"y":310.4116},"$type":"NodeCanvas.StateMachines.ActionState","$id":"5"},{"_actionList":{"executionMode":1,"actions":[{"rateOfadd":2.0,"currentValue":{"_name":"Sleepy","_targetVariableID":"09e03f82-5306-49d6-8f41-962fce3eb6e2"},"$type":"NodeCanvas.Tasks.Actions.AT_addValue"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Sleep","_position":{"x":99.2105,"y":429.226},"$type":"NodeCanvas.StateMachines.ActionState","$id":"6"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"rateOfLoose":1.0,"currentValue":{"_name":"boring","_targetVariableID":"c500d1a1-597b-4130-b720-c145ca7fa3cc"},"$type":"NodeCanvas.Tasks.Actions.AT_LooseValue"},{"rateOfLoose":1.0,"currentValue":{"_name":"hungry","_targetVariableID":"f34a4158-72a3-452d-8dcf-488d91dff5a9"},"$type":"NodeCanvas.Tasks.Actions.AT_LooseValue"},{"rateOfLoose":1.0,"currentValue":{"_name":"Thirst","_targetVariableID":"30083265-f955-46db-b6e6-7da7bde842a3"},"$type":"NodeCanvas.Tasks.Actions.AT_LooseValue"},{"rateOfLoose":1.0,"currentValue":{"_name":"Sleepy","_targetVariableID":"09e03f82-5306-49d6-8f41-962fce3eb6e2"},"$type":"NodeCanvas.Tasks.Actions.AT_LooseValue"}]},"_position":{"x":889.9083,"y":153.993},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"6"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: a17355388709b8146b005fca24c857bd, type: 2}
+  _graphSource:
+    _version: 3.33
+    _category: 
+    _comments: 
+    _translation: {x: -80, y: 1}
+    _zoomFactor: 0.9998677
+  _haltSerialization: 0
+  _externalSerializationFile: {fileID: 0}
