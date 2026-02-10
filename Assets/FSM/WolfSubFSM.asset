@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: WolfSubFSM
   m_EditorClassIdentifier: 
   _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Stop
-    play","_position":{"x":354.0,"y":241.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"rateOfadd":2.0,"currentValue":{"_name":"boring","_targetVariableID":"c500d1a1-597b-4130-b720-c145ca7fa3cc"},"$type":"NodeCanvas.Tasks.Actions.AT_addValue"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Playing","_position":{"x":634.0,"y":375.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+    play","_position":{"x":389.5003,"y":196.6421},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_actionList":{"executionMode":1,"actions":[{"rateOfadd":10.0,"currentValue":{"_name":"boring","_targetVariableID":"c500d1a1-597b-4130-b720-c145ca7fa3cc"},"$type":"NodeCanvas.Tasks.Actions.AT_addValue"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Playing","_position":{"x":841.0,"y":559.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"boolVariable":{"_name":"Global/Satisfied","_targetVariableID":"f0946569-834a-4e86-bf9f-d103fcb05bd6"},"$type":"NodeCanvas.Tasks.Actions.SetBoolean"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":432.6445,"y":454.5003},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_condition":{"currentValue":{"_name":"boring","_targetVariableID":"c500d1a1-597b-4130-b720-c145ca7fa3cc"},"value":100.0,"$type":"NodeCanvas.Tasks.Conditions.CT_more"},"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"0"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences: []
   _graphSource:
     _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 43, y: 24}
+    _translation: {x: -96, y: 22}
     _zoomFactor: 1
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}

@@ -47,8 +47,8 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			
-		}
+            NavAgent.value.ResetPath();
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {
