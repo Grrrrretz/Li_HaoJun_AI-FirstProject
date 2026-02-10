@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"boring":{"_value":40.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"boring":{"_value":130.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"hungry":{"_value":100.0,"_name":"hungry","_id":"f34a4158-72a3-452d-8dcf-488d91dff5a9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Thirst":{"_value":70.0,"_name":"Thirst","_id":"30083265-f955-46db-b6e6-7da7bde842a3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Sleepy":{"_value":200.0,"_name":"Sleepy","_id":"09e03f82-5306-49d6-8f41-962fce3eb6e2","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -1880,7 +1880,7 @@ MonoBehaviour:
   - {fileID: 985701095}
   - {fileID: 1312188267}
   _serializedVariables:
-  - _json: '{"_value":40.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":130.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":100.0,"_name":"hungry","_id":"f34a4158-72a3-452d-8dcf-488d91dff5a9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -3531,7 +3531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
-  _serializedBlackboard: '{"_variables":{"boring":{"_value":70.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  _serializedBlackboard: '{"_variables":{"boring":{"_value":200.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"hungry":{"_value":70.0,"_name":"hungry","_id":"f34a4158-72a3-452d-8dcf-488d91dff5a9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Thirst":{"_value":100.0,"_name":"Thirst","_id":"30083265-f955-46db-b6e6-7da7bde842a3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Sleepy":{"_value":130.0,"_name":"Sleepy","_id":"09e03f82-5306-49d6-8f41-962fce3eb6e2","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -3554,7 +3554,7 @@ MonoBehaviour:
   - {fileID: 985701095}
   - {fileID: 1705763797}
   _serializedVariables:
-  - _json: '{"_value":70.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":200.0,"_name":"boring","_id":"c500d1a1-597b-4130-b720-c145ca7fa3cc","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":70.0,"_name":"hungry","_id":"f34a4158-72a3-452d-8dcf-488d91dff5a9","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
