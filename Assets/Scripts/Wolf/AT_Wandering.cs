@@ -10,7 +10,9 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<NavMeshAgent> NavAgent;
 		public BBParameter<Transform> Targetposition;
 
-		
+		Animator Animator;
+
+
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -19,6 +21,10 @@ namespace NodeCanvas.Tasks.Actions {
 			if(NavAgent == null)
 			{
 				NavAgent = agent.GetComponent<NavMeshAgent>();
+            }
+			if(Animator == null)
+			{
+				Animator = agent.GetComponent<Animator>();
             }
 
 			return null;
@@ -36,7 +42,7 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-
+			Animator.SetFloat("Speed", NavAgent.value.velocity.magnitude);
         }
 
 		//Called when the task is disabled.
