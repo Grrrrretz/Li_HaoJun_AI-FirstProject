@@ -7,9 +7,9 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class AT_Start : ActionTask {
 
-		public ParticleSystem _particleSystem;
-		float time = 0f;
-		float maxtime = 5f;
+        public BBParameter< Material> material;
+
+		ParticleSystem ps;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
@@ -23,12 +23,18 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-            _particleSystem.Clear(true);
-            time = 0;
 
-            _particleSystem.Play(true);
+            ps = agent.GetComponent<ParticleSystem>();
+			ParticleSystemRenderer psr = agent.GetComponent<ParticleSystemRenderer>();
 
-			Debug.Log("play");
+			
+			psr.material = material.value;
+
+            ps.Play();
+
+
+
+            Debug.Log("play");
 
 
         }
@@ -36,21 +42,13 @@ namespace NodeCanvas.Tasks.Actions {
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
 
-
-            time += Time.deltaTime;
-
-            if (time >= maxtime)
-            {
-                EndAction(true);
-            }
         }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
 
-            _particleSystem.Stop(true,ParticleSystemStopBehavior.StopEmitting);
+            ps.Stop(true,ParticleSystemStopBehavior.StopEmitting);
 
-			time = 0f;
 
         }
 
